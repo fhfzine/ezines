@@ -1,0 +1,746 @@
+~ua | #8dayz-zine  |/| koa, gasipp, e, pain |/|
+
+|| The first 8dayz of the UndergroundAgency!
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣶
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⡿⠿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⢸⣿⡏⢀⣀⣤⣤⣶⣶⣶⣶⣶⡆
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣷⣤⡀⠀⠙⣿⣷⠀⠀⠀⠀⠀⠀⣀⣴⣶⣶⣶⣾⣿⡇⠀⠀⠀⢀⣀⣤⣤⣤⠰⣿⣷⠀⠀⢸⣿⡷⠟⢻⠏⠉⠉⠁⣠⣾⠏
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⢿⣿⣶⣄⣿⡟⠀⠀⠀⠀⠀⣼⡟⠉⠉⠉⠉⣿⣿⣇⠀⣠⡾⠿⠟⠛⣿⣿⡄⣿⣿⠀⠀⣾⣿⡇⠀⠀⠀⢀⣤⡾⠋⣡⣄
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠟⠻⢿⣿⣷⣄⡀⠀⠀⠀⣿⣷⣄⠀⠀⣰⡿⣿⣿⣾⣿⣀⠀⠀⣠⣿⣿⣧⢹⣿⣧⣸⣿⣿⡇⠀⣠⣶⣟⣩⣤⣤⣿⣿⣧⡀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣧⣤⣴⣾⠿⠿⠟⠁⠀⠀⠀⠘⠿⢿⣿⠿⠋⠀⠹⠟⠙⠿⢿⣿⠿⠛⠁⢿⣿⡎⢻⡿⠛⢻⣿⡇⣼⡿⠿⠛⠛⢻⠋⠙⠻⣿⠟
+⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠛⠛⠙⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠟⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠘⠛⠁⡸⠀⠀⢸⣿⡇⠀⠀⠀⠀⠀⠈
+⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠃⠀⠀⠀⠀⠀ CVE⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⢸⣿⣇         irctroll              CVE
+⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤
+⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛
+⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀
+⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⢿⣿⣦⡀⣰⣶⣴⣿⠀⢀⣴⣆
+⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠹⣿⡿⠟⠁⣿⣿⠀⢸⣿⣿⠀⠀⠀⠀⠀⢀⣀⣀⣀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠀⠀⠀⣿⣿⠀⠈⣿⣿⠀⠀⢀⣴⣾⠿⠿⣿⣿⡅
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⢠⣿⣿⣇⣰⣿⡁⠀⠀⢀⣿⣿⣇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣷⠟⠉⣿⣿⡿⣿⣿⣷⣶⠿⠋⣿⣿⡄
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠹⠀⠀⠘⠛⠁⠀⠘⠁⠀⠀⠀⠸⠿⠃
+
+                                                    bl1ng        bl1ng
+
+||||||||||||||||||||||
+Intro;
+
+Likely the most infamous of the watchers was/were Azazel and/or Shemyaza, the chief watcher(s) . 
+29 They were the leaders of the 200 and were the original one or two angels to ask permission from God to dwell among the humans, according to Knight and Lomas. 
+30 It was Azazel who was charged, according to the book of Enoch, with teaching humankind the skills of war, the art of jewelry, and all forms of conceit and arrogance. 
+31 The exact same charge was recorded in War in Heaven, The Book of Megadriel . 
+32 Azazel was also charged with teaching the arts of jewelry, make- up, metalwork, and medicine, along with promiscuity and illicit sexual pleasure.
+
+||||||||||||||||||||||
+Contents of the 8dayz;
+
+0x01 - irc.konnectirc.net
+0x02 - 0dayz
+0x03 - whitehat --help
+0x04 - random trolling (EFnet #lrh)
+0x05 - gr33tz
+0x06 - (outro)
+||||||||||||||||||||||
+
+
+               .=., 
+              ;c =\ 
+            __|  _/ 
+          .'-'-._/-'-._ 
+         /..   ____    \ 
+        /' _  [<_->] )  \ 
+       (  / \--\_>/-/'._ ) 
+        \-;_/\__;__/ _/ _/ 
+         '._}|==o==\{_\/ 
+          /  /-._.--\  \_ 
+         // /   /|   \ \ \ 
+        / | |   | \;  |  \ \ 
+       / /  | :/   \: \   \_\ 
+      /  |  /.'|   /: |    \ \ 
+      |  |  |--| . |--|     \_\ 
+      / _/   \ | : | /___--._) \ ~koa
+     |_(---'-| >-'-| |       '-' 
+            /_/     \_\
+
+
+
+
+
+/*||||||||||||||||||||||*\
+0x01;   Reference(s): https://raw.githubusercontent.com/undergroundagency/konnectirc/master/UA%5B0%5D_konnectirc.txt
+		      https://search.mibbit.com/networks/Axon/%23konnectirc   << Topic History
+
+It was the first few days of us becoming together, it was a normal quiet night at the ~ua lab
+when a guy called "B" joined irc.supernets.org. He started saying "stop spamming my IRC!!!!!"
+so we then proceeded to troll this man to the point where he said he had 15k bots ready to
+flood supernets! Ofcourse nothing happend, but he began to hardchat so we said "nice bot lol",
+surely he knew what we meant after he started to spam his shit-greased IRC? Well after this
+shit-storm, we gave him a while to hatch onto what we said (lol!), he did not realise anything
+so ~gasipp joined the net and b-0-0-m, there it was.. "KoNnEcTbOt sets mode +qo ua" Thats goddamn right,
++qo... What were they ever thinking???? Now this is where the fun began..
+
+
+← beto was kicked by ua (Bye!) 
+
+← AngelofDarkness was kicked by ua (Bye!) 4 
+
+udnergroundagency is now known as undergroundagency 
+
+undergroundagency set mode +b B/wyo!*@* 
+
+← B/wyo was kicked by undergroundagency (Bye!) 
+
+← CoolDudeZNC was kicked by undergroundagency (Bye!) 
+
+→ B/wyo has joined 
+
+KoNnEcTbOt set mode +qo B/wyo 
+
+Konnect-Auto set mode +v B/wyo 
+
+Digerati/axon was kicked by undergroundagency (Bye!) 
+
+//// Did you spot "B/wyo"?? There he is!!!
+
+<~undergroundagency> we run dis bitch' 
+
+<~B/wyo> ??? 
+
+//// At this point he has no idea what is going on nor that we have "+qo"
+
+<~undergroundagency> we run dis bitch' 
+
+<~B/wyo> ??? 
+
+<+koa> zine zine zine zine 
+
+<+koa> bl1ng bl1ng 
+
+<~undergroundagency> bl1ng bl1ing B 
+
+< Konnect set mode +l 43 
+
+← B/wyo was kicked by undergroundagency (Bye!) 
+
+<~undergroundagency> LOL 
+
+<~B/wyo> o.0
+
+//// There we go, little man is sp00ked! bl1ng bl1ng sp1n sp1n!!!
+
+/* <+koa> aye; we all equal though 
+/*
+/* <+koa> but ~UA 
+/* 
+/* koa is inspirational... maybe we should...
+
+<~undergroundagency> koa here brotha 
+
+undergroundagency set mode +o koa 
+
+<~undergroundagency> take that +o 
+
+<@koa> thx bro 
+
+<@koa> sup n1gg4z  
+
+//// are u n0t ent3rta1ned??
+
+<@koa> ~UA / AB 
+
+<~B/wyo> ???? 
+
+<~B/wyo> WHAT IS THIS 
+
+<~undergroundagency> B how does it feel 
+
+<~undergroundagency> UA runs this 
+
+//// WHAT IS THIS ???? K.O!!!!
+
+/* 2018-04-01 (20:23:11 - 20:23:11)     
+/* [+ntl] bl1ng bl1ng n1gg4z -- https://github.com/undergroundagency <-- we run dis bitch
+/*
+/* nice topic...
+
+</whois>
+
+~B/wyo B/wyo [B/wyo!r00t@netadmin.itfox.ch] * B 
+~B/wyo Channels: ~#konnectirc +#lobby #overdrive #swiss 
+~B/wyo Connected to server: wyo.relay PyLink Relay network - WyoLatinos 
+~B/wyo is a remote user connected via PyLink Relay. Home network: WyoLatinos; Home nick: B 
+~B/wyo Logged in as B 
+
+//// Channels: ~#konnectirc << fuck u b1tch >>
+← B/wyo was kicked by undergroundagency (Bye!) 
+← Southern_B|tch was kicked by undergroundagency (Bye!) 
+
+//*********\\
+Priv messages between gasipp & B;
+
+<B/wyo> it's illegal 
+
+<B/wyo> you know it 
+
+<undergroundagency> idc 
+
+<B/wyo> but 
+
+<B/wyo> HOW? 
+
+<undergroundagency> u told us to pwn u
+
+<B/wyo> ???? 
+
+<B/wyo> no 
+
+<undergroundagency-ua> u joined supernets    // <-- changed nick at this point
+
+<B/wyo> no i didnt 
+
+<undergroundagency-ua> kk bl1ng bl1ng
+
+<B/wyo> ?! 
+
+<B/wyo> what the fuck 
+\\*********//
+
+/;*********;\
+priv chat between e & B;
+
+/* he made a channel called #talk instead of talking in #superbowl because he was scared lol!
+/*
+
+18:44 >>>> e (e@redacted) has joined #talk
+18:44 [Users #talk]
+18:44 [@SysRq] [ e]
+18:44 >>>> Irssi: #talk: Total of 2 nicks [1 ops, 0 halfops, 0 voices, 1 normal]
+18:44 >>>> Channel #talk created Sun Apr  1 18:37:37 2018
+18:44 >>>> Irssi: Join to #talk was synced in 1 secs
+18:44 <e> you're the same person though
+18:44 <e> just fyi
+18:44 <e> same typing patterns
+18:44 <e> mannerism
+18:44 <e> you're not fooling anyone
+18:44 <SysRq> hi
+18:44 <e> 15k bots or root something
+18:45 <SysRq> no i'm not
+18:45 <e> waste my time less
+18:45 <SysRq> e
+18:45 <SysRq> what is your problem?
+18:45 <SysRq> why did you do this to my friend?
+18:45 <e> their net is obviously trash
+18:45 <e> so
+18:45 <SysRq> no
+18:46 <e> you're the same person
+18:46 <SysRq> no
+18:46 <e> yep
+18:46 <e> 15k bots or shut up
+18:46 <e> and stop wasting time
+18:46 <SysRq> if you flooding again my friend or server
+18:46 <e> ok
+18:46 <e> we will
+18:46 <SysRq> then i will kill you on the IRC
+18:46 <e> ok
+18:46 <e> have fun trying
+18:47 <e> ill make sure someone knocks the net
+18:47 <e> whats the net?
+18:47 <e> whats your "friends" net
+18:47 <SysRq> you know that i can beat your server in few seconds down, right? it's
+              called ddosing.... very easy.. but my special thing is exploiting DEV
+18:47 <SysRq> :)
+18:48 <e> lol
+18:48 <e> we find 0days on the regular here
+18:48 <e> you really think this net doesnt have ddos prot?
+18:48 <e> are you fucking dense?
+18:48 <SysRq> lol
+18:48 <e> like jesus dude
+18:48 <e> you must be retarded
+18:49 <e> I cant wait for this to be a copy pasta
+18:49 <e> jesus
+18:49 <e> lololol
+18:49 <e> cant wait to show this to gasipp
+18:49 <SysRq> where is he
+18:49 <e> shrug
+18:49 <SysRq> what?
+18:49 <e> i dont know
+18:49 <e> probably has plans
+18:49 <e> you know
+18:49 <e> like life
+18:49 <SysRq> which you dont have
+18:49 <e> but supernets will stay up
+18:49 <SysRq> ?
+18:49 <e> oh weird
+18:50 <e> your "friend" said the same thing
+18:50 <e> lol
+18:50 <SysRq> look
+18:50 <e> naw
+18:50 <e> you're the same person
+18:50 <e> go ahead and throw your trash qbot or lightaidra net at supernets
+18:50 <SysRq> you're not interested why i came with a proxy throw a proxy prot?
+18:50 <SysRq> :)
+18:50 <e> and laugh when it fails
+18:51 <e> or
+18:51 <e> just bring 15k bots here
+18:51 <SysRq> (00:50:26) <@SysRq> you're not interested why i came with a proxy throw a
+              proxy prot?
+18:51 <e> like you said originally
+18:51 <SysRq> ?
+18:51 <e> from turkey
+18:51 <e> no
+18:51 <e> im not
+18:51 <e> I really dont care
+18:51 <SysRq> why not :)
+18:51 <e> you dont scare anyone
+18:51 <SysRq> look
+18:51 <SysRq> you have a great proxy scanner and protector
+18:51 <SysRq> why i am here?
+18:51 <e> because you want to waste your own time?
+18:52 <e> or act like a hard man even though you can show anything for it
+18:52 <SysRq> because i ddost your proxy scanner and now i'm here
+18:52 <SysRq> :)
+18:52 <e> but false and idle threats
+18:52 <e> %%
+18:52 <e> oh?
+18:52 <e> because
+18:52 <e> Look
+18:52 <e> I still dont care
+18:52 <SysRq> Hostname: I113.67.108.14
+18:52 <SysRq> Lookup IP Address Location For IP: 113.67.108.14
+18:52 <SysRq> Continent:IAsia (AS)
+18:52 <SysRq> Country:IChina   IP Location Find In China (CN)
+18:52 <SysRq> Capital:IBeijing
+18:52 <SysRq> State:IGuangdong
+18:52 <SysRq> City Location:IGuangzhou
+18:52 <e> still wont stick to original threat
+18:53 <e> keeps changing threat
+18:53 <SysRq> but thats not me :(
+18:53 <SysRq> :D
+18:53 <e> you have nothing
+18:53 <e> oh wow
+18:53 <e> you came in from a chinese ip
+18:53 <e> so hard
+18:53 <SysRq> yes
+18:53 <SysRq> it was easy
+18:53 <SysRq> and it will be easy to connect to your IRC as Oper
+18:53 <SysRq> :)
+18:53 <e> ok
+18:53 <SysRq> dev0
+18:53 <e> then do it
+18:54 <e> ok
+18:54 <e> then do it
+18:54 <e> ^
+18:54 <e> ^
+18:54 <e> then do it
+18:54 <e> or shut the fuck up
+18:54 <SysRq> okay
+18:54 <e> ill be waiting in superbowl
+18:54 <SysRq> i will take between 2 and 3 days
+18:54 <e> lol
+18:54 <e> ok
+18:54 <e> cant do it right now
+18:54 <e> so you're a skid
+18:54 <e> and you're scrambling
+18:54 <SysRq> look
+18:54 <e> no you look
+18:54 <SysRq> no
+18:54 <SysRq> look
+18:54 <e> get the fuck out of this net
+18:54 <e> you're trash
+18:54 <e> lol
+18:54 <SysRq> no
+18:54 <SysRq> :)
+18:55 <SysRq> i will connect EVERYTIME to this ent
+18:55 <SysRq> net
+18:55 <e> ok
+18:55 <e> good luck being a "super elite hackerman"
+18:55 <SysRq> you can ban me, but i have tousends of other proxys ;)
+18:55 <e> ok
+18:55 <e> so does everyone else
+18:56 <SysRq> do you know who i am?
+18:56 <SysRq> :)
+18:56 <e> nobody
+18:56 <SysRq> really?
+18:56 <SysRq> :D
+18:57 <e> yes
+18:57 <e> you still havent done anything
+18:57 <e> so
+18:57 <SysRq> sure?
+18:57 <e> positive
+18:57 <SysRq> lets rock
+18:57 <e> ok
+
+\;*********;/
+
+
+
+||| In conclusion for B, dont fuck with us b1tch3z
+
+EndOfContent (EOC)
+\*||||||||||||||||||||||*/
+
+
+
+            ||||||||||||||
+           =              \       ,
+           =               |
+          _=            ___/
+         / _\           (o)\   ~e
+        | | \            _  \
+        | |/            (____)											
+         \__/          /   |
+          /           /  ___)
+         /    \       \    _)                       )
+        \      \           /                       (
+      \/ \      \_________/   |\_________________,_ )
+       \/ \      /            |     ==== _______)__)  -) --) --) \x00 \x00  ----->  *nix kernel
+         \/ \  /           (O____)\\_(_/
+                          (O_ ____)
+                           (O____)
+
+/*||||||||||||||||||||||*\
+0x02; Reference(s): https://github.com/undergroundagency/kernel/tree/master/bugs
+
+		   ©@©©@©            
+           *nix  @@©@©©@©           
+         *nix  ©©@©©@@©@©@  *nix         
+            |\@©@©©@©@@@@/|         
+            |         | | |         
+            | ========| | |         
+            | POPCORN | | |         
+    @ *nix  | ========| | |  @  *nix    
+   ©  @©    |___~ua___|_|_| @@@@
+
+
+0h my dayz! ~~ *nix rlly did fuck up!
+||~ "Shame on you Linus" ~e
+
+
+		   // CVE-2018-9008
+The first release; frogz_no_more.txt <- The lookup_pi_state and futex_requeue functions in kernel/futex.c
+in the Linux kernel through 4.15.12, and 4.16-rc through 4.16-rc6, allow local users to read portions of kernel memory 
+and potentially gain privileges because pi state can be NULL, a similar issue to CVE-2016-1880
+
+|| thxx 4 all0w1ng us t0 r3ad ur k3rnel m3m0ry
+
+/* but wait?? it doesnt stop here!!!! <~gasipp> vmalloc()?? haha....
+/*
+
+
+//CVE-2018-9253
+frogz_no_more2.txt >> the next addition to *nix 0dayz ;pPpP #>
+
+The vm_area_register_early function in mm/vmalloc.c in the Linux
+kernel through 4.15.15, and 4.16, has a use-after-free because the
+PFN_ALIGN macro (for calculating virtual memory offsets) can be called
+with an invalid data structure.
+
+// Use-after-free in the PFN_ALIGN macro for allocating virtual memory offsets  
+//
+// gotta l0ve those 0dayz right?
+// <~e> wtf b1tch..
+// <~Pain> fuck em ;)
+
+|| ~ua ~ua ~ua ~ua ~ua ~ua 
+
+
+╔╔══════════════════════╗╗ 
+║║▐█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▌║║ 
+║║▐▌░░▒▒░░▒▒░░▒▒░░▒▒░░▐▌║║ 
+║║▐▌▒▒░░▒▒░░▒▒░░▒▒░░▒▒▐▌║║ 
+║║▐▌lookz l1ke y0ur   ▐▌║║ 
+║║▐▌r00ted ;PpPpP     ▐▌║║ 
+║║▐▌~gasipp           ▐▌║║ 
+║║▐▌░░▒▒░░▒▒░░▒▒░░▒▒░░▐▌║║ 
+║║▐█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▌║║ 
+╚╚══════════════════════╝╝ 
+██▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄██ 
+██▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄██ - click click
+██▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄██ 
+██▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀██ 
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+/* here comes a bang3r.....
+/*
+/* https://github.com/undergroundagency/disclosure/blob/master/UA%5B1%5D_doublefreebypass.txt
+
+Double-Free bypass ++ PoC >> 10/10
+
+2 free's equate to a double-free heap corruption segfault; 
+using mmap() disables that segfault and allows more than 1 free 
+on any malloc'd/mmap'd variable. You can free `x` 4+ times 
+and it'll still exit cleanly..
+
+/*  2 mmap's at least; 1st for original allocation; then redefining it in
+/*  a separate memory location for misalignment / compiler / heap corruption evasion.
+/*
+/*  mmap() --> free() --> free()
+/*
+
+PoC:
+=========================================
+joe@ubuntu:~$ cat test1.c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/mman.h>
+
+int main(void){
+    void *p = mmap(0x1000, 4096, PROT_READ | PROT_WRITE, MAP_SHARED |
+MAP_ANONYMOUS, 0, 0);
+
+    void *z = malloc(p);
+    free(z);
+    free(z);
+}
+
+joe@ubuntu:~$ ./test1
+*** Error in `./test1': double free or corruption (top): 0x08332008 ***
+Aborted (core dumped)
+
+joe@ubuntu:~$ cat test1.c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/mman.h>
+
+int main(void){
+    void *p = mmap(0x1000, 4096, PROT_READ | PROT_WRITE, MAP_SHARED |
+MAP_ANONYMOUS, 0, 0);
+    p = mmap(0x2000, 4096, PROT_READ | PROT_WRITE, MAP_SHARED |
+MAP_ANONYMOUS, 0, 0);
+
+    void *z = malloc(p);
+    free(z);
+    free(z);
+}
+
+joe@ubuntu:~$ ./test1
+joe@ubuntu:~$ bl1ng bl1ng n1gg4z ;PppPpP
+
+|| w0w, l00kz fucking clean to me......
+||
+|| ~ua at ur wind0wz, close em, shut ya d00rs & hide your cerealz b1tch3z
+||
+
+EndOfContent (EOC)
+\*||||||||||||||||||||||*/
+
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⡶⠶⠞⠛⠛⠛⠛⠋⠛⠛⠛⠛⠻⠶⢶⣤⣄⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⡴⠞⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠻⢶⣤⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡶⠟⣉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣬⡛⢷⣄⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠋⠀⠈⠙⡇⠀⠀⢀⣀⣤⡶⠶⠛⠛⠛⠋⠉⠙⠛⠛⠛⠷⢶⣤⣄⡀⠀⠀⠈⣋⠁⠀⠉⠻⣦⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠰⠶⢇⣤⡶⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⣤⡀⠸⠀⠀⠀⠀⠈⢻⣆
+⠀⠀⠀⠀⠀⠀⢀⣼⠏⠀⠀⠀⠀⠀⢀⣴⠟⠹⡶⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⢖⡏⠙⢷⣄⠀⠀⠀⠀⠀⠙⣷⡀
+⠀⠀⠀⠀⠀⢀⡾⠃⠀⠀⠀⠀⢀⣴⠟⠁⠀⠀⢻⡐⢝⡢⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠔⡩⠂⡼⠀⠀⠀⠙⣷⡀⠀⠀⠀⠀⠈⢿⡄
+⠀⠀⠀⠀⢀⣾⠁⠀⠀⠀⠀⢠⡿⠁⠀⠀⠀⠀⠈⣧⠀⠙⢢⣝⠢⣄⠀⠀⠀⠀⠀⣠⠴⣫⠴⡩⠂⢰⠃⠀⠀⠀⠀⠈⢻⣆⠀⠀⠀⠀⠈⢿⡄
+⠀⠀⠀⠀⣾⠃⠀⠀⠀⠀⢠⡟⠀⠀⠀⠀⠀⠀⠀⠸⡌⢢⡑⢌⠹⣮⣑⢦⣀⡴⢊⡕⠋⡡⢊⡔⢁⡏⠀⠀⠀⠀⠀⠀⠀⢻⣆⠀⠀⠀⠀⠈⣿⡀
+⠀⠀⠀⢰⡏⠀⠀⠀⠀⢀⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠱⡄⠑⣌⡹⢿⠉⡳⢧⡠⠋⢠⠏⠀⡼⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡄⠀⠀⠀⠀⢸⣇
+⠀⠀⠀⣾⠃⠀⠀⠀⠀⣼⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⣹⠖⡉⢧⠀⠀⠀⢸⠉⡳⣾⡀⢰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣷⠀⠀⠀⠀⠀⣿
+⠀⠀⠀⣿⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⢼⡏⣹⠀⠻⡄⠀⣄⠄⠀⡰⠃⢹⣙⡿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⢿⡆
+⠀⠀⠀⣿⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⣀⡴⢋⣁⣤⢿⡁⠀⣄⠙⢆⠛⡠⠊⢀⡄⠀⣽⠦⣄⣙⠦⣄⠀⠀⠀⠀⠀⠀⠀⢹⡇⠀⠀⠀⠀⢸⡇
+⠀⠀⠀⣿⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⢀⡤⢚⠵⣚⣉⣥⠴⡚⣧⠀⢾⠑⡄⠀⢁⠔⠹⠂⣸⠓⠤⢤⡭⣙⠪⣕⢦⣀⠀⠀⠀⠀⣿⠁⠀⠀⠀⠀⣸⡇
+⠀⠀⠀⣿⠀⠀⠀⠀⠀⢿⡄⢀⣠⠞⣩⢔⣁⡊⡥⣢⡶⠟⠑⢹⣧⡀⠡⡉⠀⢈⠀⢀⡴⡏⠃⠳⠦⠀⠠⡄⠈⡑⢌⡓⢤⡀⢀⣿⢀⣀⡀⠀⠀⣿  ~pain 
+⠀⠀⠀⢹⡇⢠⣤⣤⡄⠸⣷⠛⠒⠛⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⣷⢿⠺⡗⠒⢺⡗⡿⣺⠓⠒⠒⠒⠒⠒⠒⠒⠒⠒⠚⠒⠛⣿⠇⠈⠉⠙⠆⢰⡟  - thx for the box
+⠀⠀⠀⠈⣿⡀⠀⠀⢿⠀⢻⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⡄⠃⠀⠘⢠⢧⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡟⠀⠶⠶⠶⠂⣾⠁
+⠀⠀⠀⠀⠸⣧⠀⠀⠈⠀⠀⠻⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣭⡀⠀⠀⡾⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡟⠀⠀⠀⠀⠀⣼⠇
+⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⠙⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣧⠐⠒⠒⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠋⠀⠀⠀⠀⠀⣼⠏
+⠀⠀⠀⠀⠀⠀⠙⣷⡀⠀⠀⠀⠀⠈⠻⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡎⢿⢣⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⠁⠀⠀⠀⠀⢀⣾⠋
+⠀⠀⠀⠀⠀⠀⠀⠈⢻⣆⠀⠀⠀⠀⠀⠈⠙⢷⣤⣀⠀⠀⠀⠀⠀⠀⠀⢻⡀⡞⠀⠀⠀⠀⠀⠀⠀⣀⣤⡾⠛⠁⠀⠀⠀⠀⠀⣠⡟⠁
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣄⠀⠀⠀⠀⠀⠀⠈⠙⠻⢶⣤⣄⣀⣀⠀⠈⣿⠁⠀⣀⣀⣠⣤⡶⠟⠋⠁⠀⠀⠀⠀⠀⠀⣠⡾⠋
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠛⣛⡛⢛⡛⠋⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠾⠋
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠨⠁⠈⠁⠀⠀⠀⠀⠀⠀⠀⢀⣀⣴⠾⠋⠁
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⢶⣤⣤⣀⣀⣀⠀⠀⠇⠀⠀⣀⣀⣀⣤⣤⡶⠾⠛⠉
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠙⠛⠛⠛⠛⠛⠋⠉⠉⠁
+
+
+
+
+/*||||||||||||||||||||||*\
+0x03; help 4 the whitehats holding it down out there!!!
+
+/* *nix rootkit mitigation/tips
+/*
+
+|| LD_PRELOAD / ring3 solution
+==============================
+- Delete glibc* (remove entirely)
+- http://oregontechsupport.com/articles/glibc.php (Replace tutorial)
+
+|| LKM / ring0 solution
+===========================
+- Compare sys_call_table addresses (Record them on a fresh install for later)
+- http://www.rootkitanalytics.com/kernelland/syscall-table.php
+
+Issues:
+If ring0 kit is using inline-hooking technique as mentioned in the suterusu write-up by mcoppola, the end is futile.
+
+|| r00tkitz????!?!?!??!
+
+EndOfContent (EOC)
+\*||||||||||||||||||||||*/
+
+           .-.
+          [.-''-.,
+          |  //`~\)
+          (<| 0\0|>_
+          ";\  _"/ \\_ _,
+         __\|'._/_  \ '='-,
+        /\ \    || )_///_\>>
+       (  '._ T |\ | _/),-'   -= jus taming ur b0xes...
+        '.   '._.-' /'/ |
+        | '._   _.'`-.._/
+        ,\ / '-' |/
+        [_/\-----j
+   _.--.__[_.--'_\__
+  /         `--'    '---._
+ /  '---.  -'. .'  _.--   '.
+ \_      '--.___ _;.-o     /
+   '.__ ___/______.__8----'
+     c-'----'
+
+\*||||||||||||||||||||||*/
+0x04; Reference: https://github.com/undergroundagency/l0de/blob/master/UA%5B2%5D_efnetlrhshamed.txt
+
+|| Bully gets bullied; sloth
+
+the tables have been turned....
+
+||
+|| +i gets set lol, sloth the god-almighty hacker aka 0day dr0pper
+||
+|| * [koa] (~koa@173.244.36.15): realname
+|| * [koa] #LRH #phrack 
+|| * [koa] irc.underworld.no :Underworld EFnet Client Server
+|| * [koa] is using a secure connection
+|| * [koa] 173.244.36.15 :actually using host
+|| * [koa] idle 00:00:06, signon: Tue Apr  3 10:45:44
+|| * [koa] End of WHOIS list.
+|| <l0deradio> he's in a three burrito meltdown state
+|| <koa> mailto:koa@173.244.36.15
+|| <koa> mailto:koa@173.244.36.15
+||<sloth> lol
+||
+/* b1tc3z
+/*
+
+
+
+<koa> bl1ng bl1ng faggot
+<koa> bl1ng bl1ng faggot
+<koa> bl1ng bl1ng faggot
+<koa> bl1ng bl1ng faggot
+<koa> bl1ng bl1ng faggot
+<koa> bl1ng bl1ng faggot
+<koa> bl1ng bl1ng faggot
+<l0deradio> lol torpedo
+<koa> fuck lrh
+<l0deradio> is angry
+<koa> fuck lrh
+<koa> fuck lrh
+<koa> fuck lrh
+<koa> fuck sloth
+<koa> fuck sloth
+<koa> fuck sloth
+<l0deradio> what got this little dicker with his panties in a wad
+<l0deradio> why so angry lil torpenis
+<koa> sloth = harmless
+<koa> sloth = harmless
+<koa> sloth = harmless
+<koa> sloth = harmless
+<koa> bl1ng bl1ng faggot
+<koa> bl1ng bl1ng faggot
+<haunted> koa: did someone hurt you
+<sloth> did anyone claim I'm not harmless?
+<toohighto> ONE MAN ARMY
+<sloth> I don't recall that
+<rats> shouldt this at least be in color
+<koa> sloth can't hack
+<koa> sloth can't hack
+<toohighto> AGAINST A WHOLE NETWORK
+<koa> sloth can't hack
+<koa> sloth can't hack
+<koa> sloth can't hack
+<spoke> sloth is a nice guy :)
+<koa> sloth can't hack
+<koa> sloth can't hack
+<l0deradio> lol when was the last time
+<spoke> hes nice
+<l0deradio> we raged someone this bad
+* [koa] (~koa@173.244.36.15): realname
+* [koa] #LRH #phrack 
+* [koa] irc.underworld.no :Underworld EFnet Client Server
+* [koa] is using a secure connection
+* [koa] 173.244.36.15 :actually using host
+* [koa] idle 00:00:06, signon: Tue Apr  3 10:45:44
+* [koa] End of WHOIS list.
+<l0deradio> he's in a three burrito meltdown state
+<koa> mailto:koa@173.244.36.15
+<koa> mailto:koa@173.244.36.15
+<sloth> lol
+<koa> mailto:koa@173.244.36.15
+<koa> mailto:koa@173.244.36.15
+<koa> sloth can't hack
+<koa> sloth can't hack
+<koa> mailto:koa@173.244.36.15
+<koa> sloth can't hack
+<ReadErr> STOP UR OVERHEATING MY NEW LAPTOP
+<koa> mailto:koa@173.244.36.15
+<koa> sloth can't hack
+<ReadErr> STOP FLOODING ME 
+<koa> sloth can't hack
+* l0deradio sets mode +i on #LRH    <-- lol
+<koa> sloth can't hack
+* You have been kicked from #LRH by l0deradio (koa)
+* Cannot join #Lrh (Channel is invite only)
+* Cannot join #lrh (Channel is invite only)
+* Disconnected ()
+
+/* lol +i fgtz
+/*
+
+EndOfContent (EOC)
+\*||||||||||||||||||||||*/
+
+	                        |     |
+                                \\_V_//
+                                \/=|=\/
+                                 [=v=]
+                               __\___/_____
+                              /..[  _____  ]
+                             /_  [ [  M /] ]
+                            /../.[ [ M /@] ]
+                           <-->[_[ [M /@/] ]
+                          /../ [.[ [ /@/ ] ]
+     _________________]\ /__/  [_[ [/@/ C] ]
+    <_________________>>0---]  [=\ \@/ C / /  ~ua st0pmin bugz n1gg4z
+       ___      ___   ]/000o   /__\ \ C / /
+          \    /              /....\ \_/ /
+       ....\||/....           [___/=\___/
+      .    .  .    .          [...] [...]
+     .      ..      .         [___/ \___]
+     .    0 .. 0    .         <---> <--->
+  /\/\.    .  .    ./\/\      [..]   [..]
+ / / / .../|  |\... \ \ \    _[__]   [__]_
+/ / /       \/       \ \ \  [____>   <____]
+
+
+/*||||||||||||||||||||||*\
+
+0x05; (gr33tz)
+||
+greetz to f4m / tun3 ||
+
+\*||||||||||||||||||||||*/
+
+
+/* 0x06; (outro)
+/*
+/* One for all, one for many, this is the end of a delighted all-in-one sequal; illumination, towards illuminati; surreal.
+/*
+/* "Damn this gravy is tasty." ~e
+
