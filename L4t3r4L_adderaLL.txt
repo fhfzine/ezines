@@ -812,8 +812,11 @@ Linux ubuntu 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 201
 
 0x06; gr33tz / outr0
 
+  
   mlt, @insecurity, @ut_infection, GOBBLES, zf0, h0n0, ab, ~CAPZLOCKED, phc, ~el8, 2l8, ap, t3kn10n, vl4d1m1r, NTITTION, GoD, tun3, etc
-
+  
+  irc.supernets.org/6697 #ua #superbowl #scroll
+  
   @x0r1_ua, @pthread_create, @pthread_exit
 
   "
