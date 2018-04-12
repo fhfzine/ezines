@@ -1,5 +1,5 @@
   .--.-.
- ( (    )__ 
+ ( (    )__
 (_,  \ ) ,_)
   '- \\---'
      _\\ ~ua
@@ -15,7 +15,7 @@
                \\  _
                 \\/@)
                 /(&\
-               (@(\&\       <*****> 
+               (@(\&\       <*****>
                 ` \/ \.=^=.  .""".  .=^=.
                    \  \```\\(/x x\)//```\\
                     \  \    (  L  )      }}
@@ -134,7 +134,7 @@ BEGIN_EMAIL_FEED(){
 
 Matthew Fernandez <matthew.fernandez@gmail.com>
 27 Mar (10 days ago)
-to me, fulldisclosure 
+to me, fulldisclosure
 Maybe I am misunderstanding something, but what is the vulnerability here? It looks like you are just demonstrating that a program can corrupt its own heap, which it can already do in numerous other ways.
 > _______________________________________________
 > Sent through the Full Disclosure mailing list
@@ -143,7 +143,7 @@ Maybe I am misunderstanding something, but what is the vulnerability here? It lo
 
 keliikoa kirland <keliikoakirland@gmail.com>
 5 Apr (1 day ago)
-to Matthew 
+to Matthew
 Hey I'm back ;PpPpP
 It's an actual mmap() bug, https://github.com/torvalds/linux/blob/master/mm/mmap.c#L212
 
@@ -168,7 +168,7 @@ albeit.
 
 fulldisclosure-owner@seclists.org
 10:59 (1 hour ago)
-to me 
+to me
 Your request to the Fulldisclosure mailing list
 
     Posting of your message titled "In response to Matthew Fernandez
@@ -193,7 +193,7 @@ at:
 
 keliikoa kirland <keliikoakirland@gmail.com>
 12:47 (4 minutes ago)
-to fulldisclosure. 
+to fulldisclosure.
 Eh? That's exactly what I was trying to exclaim; albeit,  "It
 looks like the comment and the test have been there for years, so they
 didn't just add this as a fix." That's the bug Matthew; self-explanatory, thanks.
@@ -209,7 +209,7 @@ didn't just add this as a fix." That's the bug Matthew; self-explanatory, thanks
                        \ \
                         \.\
                          \.\
-                          \.\  
+                          \.\
                  _         \.\/)
             _ _-' ')__     (\.\/)
            /       /  \.'`'-\/)\\
@@ -220,8 +220,8 @@ didn't just add this as a fix." That's the bug Matthew; self-explanatory, thanks
             (   `'-._>/ )     \|  \.\
             \         `:=.    (\   \.\
              \_      (    `--._)`--'\.\=7
-            _/|\_    \-._     `-:_ /```-3    
-           /  |  `-   \  t--._    Y    _3 
+            _/|\_    \-._     `-:_ /```-3
+           /  |  `-   \  t--._    Y    _3
         ,-'   |       /  |   /``'-.\--T x\
       _/     _(    ,./  /   (          \ x\
          _.-/  \  /    <     \          \ x\
@@ -521,7 +521,7 @@ MODULE_AUTHOR("UndergroundAgency");
 * Topic for #superbowl set by pyrex (Mon Apr  9 19:50:33 2018)
 <MIKEJONEZ> bruh
 <MIKEJONEZ> wb
-<MIKEJONEZ> koa: 
+<MIKEJONEZ> koa:
 <koa> thanks
 <MIKEJONEZ> np
 <MIKEJONEZ> mist u
@@ -537,14 +537,14 @@ MODULE_AUTHOR("UndergroundAgency");
 <MIKEJONEZ> with it
 <koa> it's done, waiting on solar
 <MIKEJONEZ> nice zine
-<MIKEJONEZ> whens the 
+<MIKEJONEZ> whens the
 <koa> what do u mean
 <MIKEJONEZ> release
 <koa> are u trolling again
 <MIKEJONEZ> what
 <MIKEJONEZ> nigga
 <MIKEJONEZ> link 2 zine
-<MIKEJONEZ>  . . . 
+<MIKEJONEZ>  . . .
 <koa> >it's done, waiting on solar; 0x04 0dayz ft. solar
 <MIKEJONEZ> link
 <koa> unless he doesn't pull through, been a while since i heard back()
@@ -584,7 +584,7 @@ MODULE_AUTHOR("UndergroundAgency");
 <MIKEJONEZ> 6> are fat irl
 <MIKEJONEZ> 7> doesnt have alot of sex
 <MIKEJONEZ> (pause)
-<MIKEJONEZ> can u 
+<MIKEJONEZ> can u
 <MIKEJONEZ> confirm
 <MIKEJONEZ> or deny
 <MIKEJONEZ> these
@@ -601,7 +601,7 @@ MODULE_AUTHOR("UndergroundAgency");
 <MIKEJONEZ> (pause)
 <MIKEJONEZ>  (pause)
 <koa> You're just a chatter MIKEJONEZ, gg.  <-- karma, now you're getting zine'd faggot ;PpPP
-
+[04:06:32 ]*** koa [koa@underground.agency] has quit [EMO-QUIT]
 --  --  --  --  --  --
 
 Reference(s): https://raw.githubusercontent.com/undergroundagency/ua/master/unicode_bash_bug.txt
@@ -641,14 +641,14 @@ Linux ubuntu 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 201
 
 --		--		--		--
 
- 				  
+
                               /^\  ~ua
            L L               /   \               L L
         __/|/|_             /  .  \             _|\|\__
        /_| [_[_\           /     .-\           /_]_] |_\
       /__\  __`-\_____    /    .    \    _____/-`__  /__\
      /___] /=@>  _   {>  /-.         \  <}   _  <@=\ [___\
-    /____/     /` `--/  /      .      \  \--` `\     \____\   
+    /____/     /` `--/  /      .      \  \--` `\     \____\
    /____/  \____/`-._> /               \ <_.-`\____/  \____\
   /____/    /__/      /-._     .   _.-  \      \__\    \____\
  /____/    /__/      /         .         \      \__\    \____\
@@ -670,7 +670,7 @@ Linux ubuntu 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 201
 
 <koa> who dis
 
- 
+
 <MerKii> i need to know this
 <MerKii> okay, so ur the real AB members?
 
@@ -689,7 +689,7 @@ Linux ubuntu 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 201
 <koa> bug*
 <koa> on FD
 
-<MerKii> but aren't u guys trolling MLT?         <-- autism 
+<MerKii> but aren't u guys trolling MLT?         <-- autism
 
 <koa> no, im cool with them now
 <koa> @insecurity albeit
@@ -720,7 +720,7 @@ Linux ubuntu 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 201
 
 <koa> gg
 
- 
+
 <MerKii> why are u mad?
 <MerKii> at @ me
 
@@ -774,7 +774,7 @@ Linux ubuntu 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 201
 <koa> now guess what
 <koa> since i just proved everything
 <koa> you're all gonna get zine'd ; 0x05 skidz galore
- 
+
 <MerKii> that makes me happy;
 
 <koa> good
@@ -812,19 +812,19 @@ Linux ubuntu 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 201
 
 0x06; gr33tz / outr0
 
-  
+
   mlt, @insecurity, @ut_infection, GOBBLES, zf0, h0n0, ab, ~CAPZLOCKED, phc, ~el8, 2l8, ap, t3kn10n, vl4d1m1r, NTITTION, GoD, tun3, etc
-  
+
   irc.supernets.org/6697 #ua #superbowl #scroll
-  
+
   @x0r1_ua, @pthread_create, @pthread_exit
 
   "
 
 --		--		--		--
 
-		
-				
+
+
 
                                ___------~~~~~~~~~~~----__         .:.         __----~~~~~~~~~~~------___
 			     ~~ ~--__          ......====\\~~    .:::.    ~~//====......          __--~ ~~
@@ -836,7 +836,7 @@ Linux ubuntu 4.4.0-31-generic #50~14.04.1-Ubuntu SMP Wed Jul 13 01:07:32 UTC 201
    			                      \ /   *******.:::::(o o):::::.*******   \ /
                  			       /.   ******.::::'*|V_V|***`::.******   .\
                     				 ~~--****.:::'***|___|*****`:.****--~~
-                        			       *.::'***//|___|\\*****`.* 
+                        			       *.::'***//|___|\\*****`.*
                            			       .:'  **/##|___|##\**    .
                         			      .    (v(VVV)___(VVV)v)
 
